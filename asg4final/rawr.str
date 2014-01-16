@@ -1,0 +1,8 @@
+stringset[   2]:   11831194018420276491 0x19a8570->"hello"
+stringset[   4]:   16928642263367703389 0x19a86b0->"there"
+                     631693652521310592 0x19a8610->"up"
+stringset[   6]:    1390448488287710132 0x19a85c0->"whats"
+stringset[   7]:     628919584683901914 0x19a8660->"hi"
+load_factor = 0.455
+bucket_count = 11
+max_bucket_size = 2

@@ -1,0 +1,31 @@
+//struct node { int foo ; int rawr; char go;}
+//string[] a = new string[10];
+//char f(int b) {
+//  node c = new node();
+//  if (b < 42) {
+//    char c = 'x';
+//  } else {
+//    int d = 10;
+//  }
+//}
+
+
+//struct rawr {
+//  int a;
+//  int[] b;
+//}
+
+//int a = 1;
+//int b = 2;
+//int c = 3;
+
+//int d = 43 * 23 - 2;
+int b = 4;
+while ( 5 >= 2 ){
+ int a = b;
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+stringset[   0]:   12638125627904462180 0xf3bc50->")"
+stringset[   5]:    7292344536089610112 0xf3bbb0->""Hello, world!\n""
+                   12638145419113769978 0xf3b9c0->";"
+                    7898189082677224633 0xf3b740->"rawr"
+stringset[   7]:   12638126727416090391 0xf3bb00->"("
+stringset[   9]:    7815179177440076231 0xf3ba60->"puts"
+                   14785269867199075517 0xf3b790->"bool"
+load_factor = 0.636
+bucket_count = 11
+max_bucket_size = 3

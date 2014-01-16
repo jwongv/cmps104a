@@ -1,0 +1,8 @@
+    3  6.000  259  TOK_BOOL        (bool)  
+    3  6.005  279  TOK_IDENT       (rawr)  
+    3  6.009  59   ';'             (;)  
+    3  8.000  279  TOK_IDENT       (puts)  
+    3  8.005  40   '('             (()  
+    3  8.006  282  TOK_STRINGCON   ("Hello, world!\n")  
+    3  8.023  41   ')'             ())  
+    3  8.024  59   ';'             (;)  

@@ -1,0 +1,21 @@
+program
+   vardecl
+      type
+         basetype
+            TOK_STRING (string)
+         TOK_ARRAY ([])
+      TOK_IDENT (a)
+      allocator_
+         TOK_NEW (new)
+         basetype
+            TOK_STRING (string)
+         constant
+            TOK_INTCON (10)
+   if_
+      binop
+         variable
+            TOK_IDENT (n)
+         '=' (=)
+         constant
+            TOK_INTCON (1)
+      block

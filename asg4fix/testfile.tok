@@ -1,0 +1,22 @@
+# 1 "testfile.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "testfile.oc"
+  3  2.000  262  TOK_STRING      (string)  
+  3  2.006  272  TOK_ARRAY       ([])  
+  3  2.009  279  TOK_IDENT       (a)  
+  3  2.011  61   '='             (=)  
+  3  2.013  271  TOK_NEW         (new)  
+  3  2.017  262  TOK_STRING      (string)  
+  3  2.023  91   '['             ([)  
+  3  2.024  280  TOK_INTCON      (10)  
+  3  2.026  93   ']'             (])  
+  3  2.027  59   ';'             (;)  
+# 14 "testfile.oc"
+  4  14.000  263  TOK_IF          (if)  
+  4  14.002  40   '('             (()  
+  4  14.003  279  TOK_IDENT       (n)  
+  4  14.005  61   '='             (=)  
+  4  14.007  280  TOK_INTCON      (1)  
+  4  14.008  41   ')'             ())  
+  4  14.009  59   ';'             (;)  

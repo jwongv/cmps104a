@@ -1,0 +1,151 @@
+program
+   function
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (line)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (file)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (__assert_fail)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (expr)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (putb)
+      decl
+         type
+            basetype
+               TOK_BOOL (bool)
+         TOK_IDENT (b)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (putc)
+      decl
+         type
+            basetype
+               TOK_CHAR (char)
+         TOK_IDENT (c)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (puti)
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (i)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (puts)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (s)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (endl)
+      block
+   function
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (getc)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+      TOK_IDENT (getw)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+      TOK_IDENT (getln)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+         TOK_ARRAY ([])
+      TOK_IDENT (getargv)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (exit)
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (status)
+      block
+   vardecl
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (a)
+      constant
+         TOK_INTCON (3)
+   vardecl
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (b)
+      constant
+         TOK_INTCON (8)
+   vardecl
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (c)
+      binop
+         variable
+            TOK_IDENT (a)
+         '+' (+)
+         variable
+            TOK_IDENT (b)
+   binop
+      variable
+         TOK_IDENT (a)
+      '=' (=)
+      binop
+         variable
+            TOK_IDENT (b)
+         '+' (+)
+         variable
+            TOK_IDENT (c)
+   call
+      TOK_IDENT (puti)
+      variable
+         TOK_IDENT (a)
+   call
+      TOK_IDENT (putc)
+      constant
+         TOK_CHARCON ('\n')

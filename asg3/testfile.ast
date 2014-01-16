@@ -1,0 +1,5 @@
+program
+   call
+      variable
+         TOK_IDENT (a)
+      TOK_IDENT (endl)

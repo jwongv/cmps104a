@@ -1,0 +1,481 @@
+program
+   function
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (expr)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (file)
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (line)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (__assert_fail)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_BOOL (bool)
+         TOK_IDENT (b)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (putb)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_CHAR (char)
+         TOK_IDENT (c)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (putc)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (i)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (puti)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (s)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (puts)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (endl)
+      block
+   function
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (getc)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+      TOK_IDENT (getw)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+      TOK_IDENT (getln)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+         TOK_ARRAY ([])
+      TOK_IDENT (getargv)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (status)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (exit)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (s1)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (s2)
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (strcmp)
+      block
+         vardecl
+            type
+               basetype
+                  TOK_INT (int)
+            TOK_IDENT (index)
+            constant
+               TOK_INTCON (0)
+         vardecl
+            type
+               basetype
+                  TOK_BOOL (bool)
+            TOK_IDENT (contin)
+            constant
+               TOK_TRUE (true)
+         while_
+            variable
+               TOK_IDENT (contin)
+            block
+               vardecl
+                  type
+                     basetype
+                        TOK_CHAR (char)
+                  TOK_IDENT (s1c)
+                  variable
+                     variable
+                        TOK_IDENT (s1)
+                     variable
+                        TOK_IDENT (index)
+               vardecl
+                  type
+                     basetype
+                        TOK_CHAR (char)
+                  TOK_IDENT (s2c)
+                  variable
+                     variable
+                        TOK_IDENT (s2)
+                     variable
+                        TOK_IDENT (index)
+               vardecl
+                  type
+                     basetype
+                        TOK_INT (int)
+                  TOK_IDENT (cmp)
+                  binop
+                     unop
+                        TOK_ORD (ord)
+                           variable
+                              TOK_IDENT (s1c)
+                     '-' (-)
+                     unop
+                        TOK_ORD (ord)
+                           variable
+                              TOK_IDENT (s2c)
+               if_
+                  binop
+                     variable
+                        TOK_IDENT (cmp)
+                     TOK_NE (!=)
+                     constant
+                        TOK_INTCON (0)
+                  return_
+                     variable
+                        TOK_IDENT (cmp)
+               if_
+                  binop
+                     variable
+                        TOK_IDENT (s1c)
+                     TOK_EQ (==)
+                     constant
+                        TOK_CHARCON ('\0')
+                  binop
+                     variable
+                        TOK_IDENT (contin)
+                     '=' (=)
+                     constant
+                        TOK_FALSE (false)
+               binop
+                  variable
+                     TOK_IDENT (index)
+                  '=' (=)
+                  binop
+                     variable
+                        TOK_IDENT (index)
+                     '+' (+)
+                     constant
+                        TOK_INTCON (1)
+         return_
+            constant
+               TOK_INTCON (0)
+   function
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (size)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+            TOK_ARRAY ([])
+         TOK_IDENT (array)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (insertion_sort)
+      block
+         vardecl
+            type
+               basetype
+                  TOK_INT (int)
+            TOK_IDENT (sorted)
+            constant
+               TOK_INTCON (1)
+         while_
+            binop
+               variable
+                  TOK_IDENT (sorted)
+               TOK_LT (<)
+               variable
+                  TOK_IDENT (size)
+            block
+               vardecl
+                  type
+                     basetype
+                        TOK_INT (int)
+                  TOK_IDENT (slot)
+                  variable
+                     TOK_IDENT (sorted)
+               vardecl
+                  type
+                     basetype
+                        TOK_STRING (string)
+                  TOK_IDENT (element)
+                  variable
+                     variable
+                        TOK_IDENT (array)
+                     variable
+                        TOK_IDENT (slot)
+               vardecl
+                  type
+                     basetype
+                        TOK_BOOL (bool)
+                  TOK_IDENT (contin)
+                  constant
+                     TOK_TRUE (true)
+               while_
+                  variable
+                     TOK_IDENT (contin)
+                  block
+                     if_
+                        binop
+                           variable
+                              TOK_IDENT (slot)
+                           TOK_EQ (==)
+                           constant
+                              TOK_INTCON (0)
+                        block
+                           binop
+                              variable
+                                 TOK_IDENT (contin)
+                              '=' (=)
+                              constant
+                                 TOK_FALSE (false)
+                        if_
+                           binop
+                              call
+                                 variable
+                                    variable
+                                       TOK_IDENT (array)
+                                    binop
+                                       variable
+                                          TOK_IDENT (slot)
+                                       '-' (-)
+                                       constant
+                                          TOK_INTCON (1)
+                                 variable
+                                    TOK_IDENT (element)
+                                 TOK_IDENT (strcmp)
+                              TOK_LE (<=)
+                              constant
+                                 TOK_INTCON (0)
+                           block
+                              binop
+                                 variable
+                                    TOK_IDENT (contin)
+                                 '=' (=)
+                                 constant
+                                    TOK_FALSE (false)
+                           block
+                              binop
+                                 variable
+                                    variable
+                                       TOK_IDENT (array)
+                                    variable
+                                       TOK_IDENT (slot)
+                                 '=' (=)
+                                 variable
+                                    variable
+                                       TOK_IDENT (array)
+                                    binop
+                                       variable
+                                          TOK_IDENT (slot)
+                                       '-' (-)
+                                       constant
+                                          TOK_INTCON (1)
+                              binop
+                                 variable
+                                    TOK_IDENT (slot)
+                                 '=' (=)
+                                 binop
+                                    variable
+                                       TOK_IDENT (slot)
+                                    '-' (-)
+                                    constant
+                                       TOK_INTCON (1)
+               binop
+                  variable
+                     variable
+                        TOK_IDENT (array)
+                     variable
+                        TOK_IDENT (slot)
+                  '=' (=)
+                  variable
+                     TOK_IDENT (element)
+               binop
+                  variable
+                     TOK_IDENT (sorted)
+                  '=' (=)
+                  binop
+                     variable
+                        TOK_IDENT (sorted)
+                     '+' (+)
+                     constant
+                        TOK_INTCON (1)
+   function
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (label)
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (size)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+            TOK_ARRAY ([])
+         TOK_IDENT (array)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (print_array)
+      block
+         call
+            TOK_IDENT (endl)
+         call
+            variable
+               TOK_IDENT (label)
+            TOK_IDENT (puts)
+         call
+            constant
+               TOK_STRINGCON (":\n")
+            TOK_IDENT (puts)
+         vardecl
+            type
+               basetype
+                  TOK_INT (int)
+            TOK_IDENT (index)
+            constant
+               TOK_INTCON (0)
+         while_
+            binop
+               variable
+                  TOK_IDENT (index)
+               TOK_LT (<)
+               variable
+                  TOK_IDENT (size)
+            block
+               call
+                  variable
+                     variable
+                        TOK_IDENT (array)
+                     variable
+                        TOK_IDENT (index)
+                  TOK_IDENT (puts)
+               call
+                  TOK_IDENT (endl)
+               binop
+                  variable
+                     TOK_IDENT (index)
+                  '=' (=)
+                  binop
+                     variable
+                        TOK_IDENT (index)
+                     '+' (+)
+                     constant
+                        TOK_INTCON (1)
+   vardecl
+      type
+         basetype
+            TOK_STRING (string)
+         TOK_ARRAY ([])
+      TOK_IDENT (argv)
+      call
+         TOK_IDENT (getargv)
+   vardecl
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (argc)
+      constant
+         TOK_INTCON (0)
+   while_
+      binop
+         variable
+            variable
+               TOK_IDENT (argv)
+            variable
+               TOK_IDENT (argc)
+         TOK_NE (!=)
+         constant
+            TOK_NULL (null)
+      binop
+         variable
+            TOK_IDENT (argc)
+         '=' (=)
+         binop
+            variable
+               TOK_IDENT (argc)
+            '+' (+)
+            constant
+               TOK_INTCON (1)
+   call
+      constant
+         TOK_STRINGCON ("unsorted")
+      variable
+         TOK_IDENT (argc)
+      variable
+         TOK_IDENT (argv)
+      TOK_IDENT (print_array)
+   call
+      variable
+         TOK_IDENT (argc)
+      variable
+         TOK_IDENT (argv)
+      TOK_IDENT (insertion_sort)
+   call
+      constant
+         TOK_STRINGCON ("sorted")
+      variable
+         TOK_IDENT (argc)
+      variable
+         TOK_IDENT (argv)
+      TOK_IDENT (print_array)

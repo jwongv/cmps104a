@@ -1,0 +1,10 @@
+# 1 "testfile.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "testfile.oc"
+# 10 "testfile.oc"
+  4  10.000  279  TOK_IDENT       (endl)  
+  4  10.005  40   '('             (()  
+  4  10.006  279  TOK_IDENT       (a)  
+  4  10.007  41   ')'             ())  
+  4  10.008  59   ';'             (;)  

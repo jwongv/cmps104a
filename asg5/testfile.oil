@@ -1,0 +1,12 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+int __b;
+void __ocmain ()
+{
+while_1:;
+b1 = 5 >= 2;
+if(!b1) goto break_1;
+int _2_a = _2_b
+goto while_1;
+break_1:;
+}

@@ -1,0 +1,26 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2013.10.15.04.29.45;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@auxlib.o: auxlib.cc auxlib.h
+stringset.o: stringset.cc stringset.h
+oc.o: oc.cc auxlib.h stringset.h
+@

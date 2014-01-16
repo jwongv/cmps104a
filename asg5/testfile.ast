@@ -1,0 +1,23 @@
+program
+   vardecl
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (b)
+      constant
+         TOK_INTCON (4)
+   while_
+      binop
+         constant
+            TOK_INTCON (5)
+         TOK_GE (>=)
+         constant
+            TOK_INTCON (2)
+      block
+         vardecl
+            type
+               basetype
+                  TOK_INT (int)
+            TOK_IDENT (a)
+            variable
+               TOK_IDENT (b)

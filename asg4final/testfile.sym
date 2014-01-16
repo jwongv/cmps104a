@@ -1,0 +1,41 @@
+__assert_fail (6.30.5) {1} void(string,string,int)
+   expr (6.30.27) {2} string
+   file (6.30.40) {2} string
+   line (6.30.50) {2} int
+argc (7.68.4) {1} int
+argv (7.67.9) {1} string[]
+endl (6.37.5) {1} void()
+exit (6.42.5) {1} void(int)
+   status (6.42.15) {12} int
+getargv (6.41.9) {1} string[]()
+getc (6.38.4) {1} int()
+getln (6.40.7) {1} string()
+getw (6.39.7) {1} string()
+insertion_sort (7.34.5) {1} void(int,string[])
+   array (7.34.40) {15} string[]
+   size (7.34.25) {15} int
+   sorted (7.35.7) {15} int
+      contin (7.39.11) {16} bool
+      element (7.38.13) {16} string
+      slot (7.37.10) {16} int
+print_array (7.55.5) {1} void(string,int,string[])
+   array (7.55.51) {21} string[]
+   index (7.59.7) {21} int
+   label (7.55.25) {21} string
+   size (7.55.36) {21} int
+putb (6.33.5) {1} void(bool)
+   b (6.33.16) {3} bool
+putc (6.34.5) {1} void(char)
+   c (6.34.16) {4} char
+puti (6.35.5) {1} void(int)
+   i (6.35.15) {5} int
+puts (6.36.5) {1} void(string)
+   s (6.36.18) {6} string
+strcmp (7.20.4) {1} int(string,string)
+   contin (7.22.8) {13} bool
+   index (7.21.7) {13} int
+   s1 (7.20.19) {13} string
+   s2 (7.20.30) {13} string
+      cmp (7.26.10) {14} int
+      s1c (7.24.11) {14} char
+      s2c (7.25.11) {14} char

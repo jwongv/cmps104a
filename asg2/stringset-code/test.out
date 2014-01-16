@@ -1,0 +1,65 @@
+==6948== Memcheck, a memory error detector
+==6948== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==6948== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==6948== Command: teststring Listing.pdf Listing.ps Makefile RCS main.cc main.o stringset.cc stringset.h stringset.o test.out teststring teststring.output Listing.pdf Listing.ps Makefile RCS main.cc main.o stringset.cc stringset.h stringset.o test.out teststring teststring.output Listing.pdf Listing.ps Makefile RCS main.cc main.o stringset.cc stringset.h stringset.o test.out teststring teststring.output
+==6948== 
+intern ("Listing.pdf") returned 0x4c280f8->"Listing.pdf"
+intern ("Listing.ps") returned 0x4c281b8->"Listing.ps"
+intern ("Makefile") returned 0x4c28278->"Makefile"
+intern ("RCS") returned 0x4c28338->"RCS"
+intern ("main.cc") returned 0x4c283e8->"main.cc"
+intern ("main.o") returned 0x4c28498->"main.o"
+intern ("stringset.cc") returned 0x4c28548->"stringset.cc"
+intern ("stringset.h") returned 0x4c28608->"stringset.h"
+intern ("stringset.o") returned 0x4c286c8->"stringset.o"
+intern ("test.out") returned 0x4c28788->"test.out"
+intern ("teststring") returned 0x4c28848->"teststring"
+intern ("teststring.output") returned 0x4c28908->"teststring.output"
+intern ("Listing.pdf") returned 0x4c280f8->"Listing.pdf"
+intern ("Listing.ps") returned 0x4c281b8->"Listing.ps"
+intern ("Makefile") returned 0x4c28278->"Makefile"
+intern ("RCS") returned 0x4c28338->"RCS"
+intern ("main.cc") returned 0x4c283e8->"main.cc"
+intern ("main.o") returned 0x4c28498->"main.o"
+intern ("stringset.cc") returned 0x4c28548->"stringset.cc"
+intern ("stringset.h") returned 0x4c28608->"stringset.h"
+intern ("stringset.o") returned 0x4c286c8->"stringset.o"
+intern ("test.out") returned 0x4c28788->"test.out"
+intern ("teststring") returned 0x4c28848->"teststring"
+intern ("teststring.output") returned 0x4c28908->"teststring.output"
+intern ("Listing.pdf") returned 0x4c280f8->"Listing.pdf"
+intern ("Listing.ps") returned 0x4c281b8->"Listing.ps"
+intern ("Makefile") returned 0x4c28278->"Makefile"
+intern ("RCS") returned 0x4c28338->"RCS"
+intern ("main.cc") returned 0x4c283e8->"main.cc"
+intern ("main.o") returned 0x4c28498->"main.o"
+intern ("stringset.cc") returned 0x4c28548->"stringset.cc"
+intern ("stringset.h") returned 0x4c28608->"stringset.h"
+intern ("stringset.o") returned 0x4c286c8->"stringset.o"
+intern ("test.out") returned 0x4c28788->"test.out"
+intern ("teststring") returned 0x4c28848->"teststring"
+intern ("teststring.output") returned 0x4c28908->"teststring.output"
+stringset[   1]:   16535220712839172848 0x4c285a0->"stringset.cc"
+stringset[   3]:    2586491021746226264 0x4c288a0->"teststring"
+                   12271277041006505511 0x4c284e0->"main.o"
+stringset[   4]:   15856372366427549707 0x4c287e0->"test.out"
+stringset[   6]:   12165310408658569987 0x4c28150->"Listing.pdf"
+stringset[   7]:    3769442993623408023 0x4c28720->"stringset.o"
+stringset[  12]:   17940775167660870368 0x4c28430->"main.cc"
+stringset[  13]:   18201842504327843073 0x4c282d0->"Makefile"
+                     402963791104991022 0x4c28210->"Listing.ps"
+stringset[  20]:   11561774995555939875 0x4c28380->"RCS"
+                    3769439695088523390 0x4c28660->"stringset.h"
+stringset[  21]:   10888049205256263171 0x4c28960->"teststring.output"
+load_factor = 0.522
+bucket_count = 23
+max_bucket_size = 2
+==6948== 
+==6948== HEAP SUMMARY:
+==6948==     in use at exit: 0 bytes in 0 blocks
+==6948==   total heap usage: 50 allocs, 50 frees, 1,722 bytes allocated
+==6948== 
+==6948== All heap blocks were freed -- no leaks are possible
+==6948== 
+==6948== For counts of detected and suppressed errors, rerun with: -v
+==6948== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)

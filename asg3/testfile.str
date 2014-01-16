@@ -1,0 +1,5 @@
+stringset[   2]:   10458951940989623634 0x13b86f0->"endl"
+stringset[   4]:    9589687226377335774 0x13b8740->"(a);"
+load_factor = 0.182
+bucket_count = 11
+max_bucket_size = 1

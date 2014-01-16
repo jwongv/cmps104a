@@ -1,0 +1,6 @@
+# 1 "foo.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "foo.oc"
+  3  1.000  279  TOK_IDENT       (line)  
+  3  1.005  280  TOK_INTCON      (1)  
